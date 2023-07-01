@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0%;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dark{
+  --color-bg-primary: #222;
+  --color-bg-secondary: #333;
+  --color-text-primary: #fff;
+  --color-text-secondary: #D1D5DB;
+  --color-border: #444;
+  --color-placholder:	#D1D5DB;
+}
+
+.light{
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #f6f3f3;
+  --color-text-primary: #000;
+  --color-text-secondary: #333;
+  --color-border: #E5E7EB;
+  --color-placholder:	#333;
+}
+
+.login-input{
+  @apply border-b border-gray-400  h-10 rounded-md pl-4 text-sm font-semibold placeholder:opacity-80 outline-none
+       focus:border-blue-400 focus:bg-white transition-all ease-linear bg-[#F5F5F5]
+}
+
+.login-button{
+  @apply bg-blue-400 rounded-md h-10 text-white font-bold shadow-md
+}
+
+.user-img{
+  @apply h-10 w-10 rounded-[50%] object-cover cursor-pointer
+}
+
+.input{
+  @apply w-full px-5 py-1 outline-none rounded-2xl text-secondary placeholder:text-sm bg-secondary placeholder:bg-placeholder
+}
+
+.btn{
+  @apply w-20 px-4 py-1 text-sm border rounded-[4px] border-primary
+}
